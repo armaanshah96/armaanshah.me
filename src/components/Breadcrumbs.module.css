@@ -4,7 +4,12 @@
 }
 
 .list {
-  margin: 0rem 0.5rem;
+  padding: 0;
+  display: inherit;
   font-size: 14px;
   list-style-type: none;
+}
+
+.listItem {
+  margin: 0rem 0.5rem;
 }

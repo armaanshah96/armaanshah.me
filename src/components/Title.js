@@ -1,8 +1,14 @@
-import React from "react";
-import classes from "./Title.module.css";
+import React from 'react';
+import classes from './Title.module.css';
 
-const pageTitle = () => {
-  return <h4 className={classes.title}>armaan</h4>;
+const PageTitle = props => {
+  const titleTag = props.isHomepage
+    ? myName
+    : props.navigation.path[props.navigation.path.length-1];
+
+  return <h4 className={classes.title}>{titleTag}</h4>;
 };
 
-export default pageTitle;
+const myName = 'armaan';
+
+export default PageTitle;
