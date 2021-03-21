@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import classes from './App.module.css';
-import PageTitle from './components/Title';
-import Breadcrumbs from './components/Breadcrumbs';
+import React, { useState } from "react";
+import classes from "./App.module.css";
+import PageTitle from "./components/Title";
+import Breadcrumbs from "./components/Breadcrumbs";
+import ContentBlocks from "./components/ContentBlocks";
 
 const App = () => {
   const [navigationState] = useState({
@@ -18,10 +19,17 @@ const App = () => {
         navigation={navigationState}
         isHomepage={isHomepage(navigationState.path)}
       />
+      <ContentBlocks page={currentPage(navigationState.path)} />
     </div>
   );
 };
 
 const isHomepage = (pathArray) => pathArray.length === 0;
+const currentPage = (pathArray) => {
+  if (pathArray.length === 0) {
+    return "home";
+  }
+  return pathArray[pathArray.length - 1];
+};
 
 export default App;
