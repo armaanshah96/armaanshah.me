@@ -1,0 +1,10 @@
+.Breadcrumbs {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  margin: 0rem 0.5rem;
+  font-size: 14px;
+  list-style-type: none;
+}
