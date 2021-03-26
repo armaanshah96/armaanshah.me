@@ -31,6 +31,7 @@ const App = (props) => {
       />
       <Switch>
         <Route exact path="/" render={() => <ContentBlocks page="home" />} />
+        <Route exact path="/armaan" render={() => <ContentBlocks page="armaan" />} />
         {currentRoute(navigationState.path)}
         {siteData[currentPage(navigationState.path)].content.map(
           (items, index) => (

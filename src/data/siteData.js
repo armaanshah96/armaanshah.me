@@ -3,8 +3,8 @@ const siteData = {
     title: "armaan",
     content: [
       {
-        title: "reading",
-        link: "reading",
+        title: "bookshelf",
+        link: "bookshelf",
         isExternalLink: false
       },
       {
@@ -27,8 +27,8 @@ const siteData = {
       },
     ],
   },
-  reading: {
-    title: "reading",
+  bookshelf: {
+    title: "bookshelf",
     content: [
       {
         title: "The Ideological Turing Test",
@@ -37,6 +37,14 @@ const siteData = {
         link: "https://medium.com/the-polymath-project/the-ideological-turing-test-how-to-be-less-wrong-6803a8c290cf",
         isExternalLink: true
       },
+    ],
+  },
+  armaan: {
+    title: "armaan",
+    content: [
+      {
+        title: "armaanshah96 at gmail.com",
+      }
     ],
   },
 };
