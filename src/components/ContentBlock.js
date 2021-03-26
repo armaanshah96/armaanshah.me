@@ -5,12 +5,13 @@ import classes from "./ContentBlock.module.css";
 
 const ContentBlock = (props) => {
   const match = useRouteMatch();
-
-  return (
-    <h5 className={classes.listItemTitle}>
-      <Link to={`${match.url}${props.title}`}>{props.title}</Link>
-    </h5>
+  const link = props.isExternalLink ? (
+    <a href={props.link}>{props.title}</a>
+  ) : (
+    <Link to={`${match.url}${props.link}`}>{props.title}</Link>
   );
+
+  return <h5 className={classes.listItemTitle}>{link}</h5>;
 };
 
 export default ContentBlock;

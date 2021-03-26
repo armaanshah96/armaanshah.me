@@ -6,7 +6,7 @@ const ContentBlocks = (props) => {
   return (
     <div>
       {siteData[props.page].content.map((items) => (
-        <ContentBlock key={items.title} title={items.title} />
+        <ContentBlock key={items.title} {...items} />
       ))}
     </div>
   );
