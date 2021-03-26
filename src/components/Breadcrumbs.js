@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
 import classes from "./Breadcrumbs.module.css";
+import { home } from "../utils/constants";
 import Breadcrumb from "./Breadcrumb";
 
 const Breadcrumbs = (props) => {
@@ -29,7 +30,5 @@ const Breadcrumbs = (props) => {
     </nav>
   );
 };
-
-const home = "home";
 
 export default Breadcrumbs;

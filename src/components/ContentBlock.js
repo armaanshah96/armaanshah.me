@@ -13,7 +13,12 @@ const ContentBlock = (props) => {
     link = <a href={props.link}>{props.title}</a>;
   }
 
-  return <h5 className={classes.listItemTitle}>{link}</h5>;
+  return (
+    <div className={classes.listItem}>
+      <h5 className={classes.listItemTitle}>{link}</h5>
+      <p className={classes.paragraph}>{props.body}</p>
+    </div>
+  );
 };
 
 export default ContentBlock;

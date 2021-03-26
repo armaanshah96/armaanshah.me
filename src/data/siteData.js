@@ -1,6 +1,6 @@
 const siteData = {
   home: {
-    title: "armaan",
+    title: "home",
     content: [
       {
         title: "bookshelf",
@@ -33,7 +33,7 @@ const siteData = {
       {
         title: "The Ideological Turing Test",
         body:
-          "I'm wrong more often than not. It's worthwhile to treat every interaction with the assumption that I could be wrong. With disagreements, look to refute the strongest part of the opposite argument to be less wrong.",
+          "I'm wrong more often than not and it's worth treating interactions with that awareness. It's an idea obvious to many, but approaching conversations from that standpoint can be tough. With disagreements, refute the strongest part of the opposing argument, the steel man, to be less wrong.",
         link: "https://medium.com/the-polymath-project/the-ideological-turing-test-how-to-be-less-wrong-6803a8c290cf",
         isExternalLink: true
       },
