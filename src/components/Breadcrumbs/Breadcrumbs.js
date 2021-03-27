@@ -2,8 +2,8 @@ import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
 import classes from "./Breadcrumbs.module.css";
-import { home } from "../utils/constants";
-import Breadcrumb from "./Breadcrumb";
+import { home } from "../../utils/constants";
+import Breadcrumb from "./Breadcrumb/Breadcrumb";
 
 const Breadcrumbs = (props) => {
   const match = useRouteMatch();

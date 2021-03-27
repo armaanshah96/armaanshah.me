@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import classes from './Title.module.css';
-import { myName } from '../utils/constants';
+import classes from './PageTitle.module.css';
+import { myName } from '../../utils/constants';
 
 const PageTitle = props => {
   const match = useRouteMatch();

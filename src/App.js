@@ -8,10 +8,10 @@ import {
   isHomepage,
   currentPage,
 } from "./utils/routeUtil";
-import PageTitle from "./components/Title";
-import Breadcrumbs from "./components/Breadcrumbs";
-import ContentBlocks from "./components/ContentBlocks";
-import CurrentRoute from "./components/CurrentRoute";
+import PageTitle from "./components/PageTitle/PageTitle";
+import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
+import ContentBlocks from "./components/ContentBlocks/ContentBlocks";
+import CurrentRoute from "./components/CurrentRoute/CurrentRoute";
 
 const App = (props) => {
   const [navigationState, setNavigationState] = useState({
