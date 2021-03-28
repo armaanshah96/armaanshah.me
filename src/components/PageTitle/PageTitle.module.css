@@ -1,8 +1,24 @@
+.pageTitle {
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+
 .title {
   font-weight: 300;
-  padding-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+.subtitle {
+  font-size: 10px;
 }
 
 .noDecoration {
   text-decoration: none;
+}
+
+@media(max-width: 768px) {
+  .pageTitle {
+    flex-direction: column;
+  }
 }

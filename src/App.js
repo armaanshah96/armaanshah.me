@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 
-import classes from "./App.module.css";
 import siteData from "./data/siteData";
 import {
   constructPathArray,
@@ -26,14 +25,14 @@ const App = (props) => {
   }, [props.location.pathname]);
 
   return (
-    <div className={classes.App}>
+    <div>
       <Breadcrumbs
         navigation={navigationState}
-        isHomepage={isHomepage(props.location.pathname)}
+        isHomepage={isHomepage(navigationState.path)}
       />
       <PageTitle
         navigation={navigationState}
-        isHomepage={isHomepage(props.location.pathname)}
+        isHomepage={isHomepage(navigationState.path)}
       />
       <Switch>
         <Route

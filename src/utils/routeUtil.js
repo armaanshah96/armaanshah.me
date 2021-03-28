@@ -3,7 +3,7 @@ import { home } from "./constants";
 export const constructPathArray = (pathname) =>
   pathname.split("/").filter((el) => el.length);
 
-export const isHomepage = (url) => url === "/";
+export const isHomepage = (pathArray) => pathArray.length === 0;
 
 export const currentPage = (pathArray) => {
   if (pathArray.length === 0) {

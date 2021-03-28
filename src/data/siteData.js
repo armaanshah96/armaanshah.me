@@ -1,6 +1,7 @@
 const siteData = {
   home: {
     title: "home",
+    subtitle: null,
     content: [
       {
         title: "bookshelf",
@@ -16,6 +17,7 @@ const siteData = {
   },
   projects: {
     title: "projects",
+    subtitle: "",
     content: [
       {
         title:
@@ -29,6 +31,7 @@ const siteData = {
   },
   bookshelf: {
     title: "bookshelf",
+    subtitle: "for articles and books that had a lasting impact",
     content: [
       {
         title: "The Ideological Turing Test",
@@ -41,6 +44,7 @@ const siteData = {
   },
   armaan: {
     title: "armaan",
+    subtitle: "other info",
     content: [
       {
         title: "armaanshah96 at gmail.com",
