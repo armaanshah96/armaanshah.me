@@ -7,7 +7,7 @@ const ContentBlock = (props) => {
   const match = useRouteMatch();
   let link = <Link to={`${match.url}${props.link}`}>{props.title}</Link>;
 
-  if (props.link === undefined) {
+  if (props.link === null) {
     link = props.title;
   } else if (props.isExternalLink) {
     link = <a href={props.link}>{props.title}</a>;

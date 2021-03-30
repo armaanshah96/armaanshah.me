@@ -1,6 +1,6 @@
 import React from "react";
 import siteData from "../../data/siteData";
-import ContentBlock from "../ContentBlock/ContentBlock";
+import ContentBlock from "./ContentBlock/ContentBlock";
 
 const ContentBlocks = (props) => {
   return (
