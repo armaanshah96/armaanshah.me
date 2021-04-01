@@ -1,0 +1,9 @@
+.Label {
+  padding: .2rem .5rem;
+  background-color: #dacdcd;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #595959
+}

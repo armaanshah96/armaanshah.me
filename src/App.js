@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 
-import siteData from "./data/siteData";
-import {
-  constructPathArray,
-  isHomepage,
-  currentPage,
-} from "./utils/routeUtil";
+import { constructPathArray, isHomepage } from "./utils/routeUtil";
 import PageTitle from "./components/PageTitle/PageTitle";
 import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
 import ContentBlocks from "./components/ContentBlocks/ContentBlocks";
-import CurrentRoute from "./components/CurrentRoute/CurrentRoute";
+import CurrentRoute from "./components/Routes/CurrentRoute/CurrentRoute";
+import DynamicRoutes from "./components/Routes/Dynamic Routes/DynamicRoutes";
 
 const App = (props) => {
   const [navigationState, setNavigationState] = useState({
@@ -41,15 +37,7 @@ const App = (props) => {
           render={() => <ContentBlocks page="armaan" />}
         />
         <CurrentRoute pathArray={navigationState.path} />
-        {siteData[currentPage(navigationState.path)].content.map(
-          (items, index) => (
-            <Route
-              key={index}
-              path={`${props.match.url}${items.title}`}
-              render={() => <ContentBlocks page={items.title} />}
-            />
-          )
-        )}
+        <DynamicRoutes pathArray={navigationState.path} />
       </Switch>
     </div>
   );

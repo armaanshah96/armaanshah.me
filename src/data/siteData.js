@@ -33,17 +33,19 @@ const siteData = {
         title:
           "Pyrus: Designing A Collaborative Programming Game to Support Problem-Solving Behaviors",
         body:
-          "[Research Paper]: Research exploring how to motivate novice programmers to practice problem solving skills while working on programming challenges. Encouraging behaviors like planning in advance through game mechanics.",
+          "Research exploring how to motivate novice programmers to practice problem solving skills while working on programming challenges. Encouraging behaviors like planning in advance through game mechanics.",
         link: "http://eleanorourke.com/papers/pyrus_collaborative_programming_chi.pdf",
-        isExternalLink: true
+        isExternalLink: true,
+        tag: 'research',
       },
       {
         title:
           "Pipes: A game to learn functional array methods (map, filter, reduce)",
         body:
-          "[Learning Game]: How can we make learning experiences more compelling? In exploration of alternative approaches to teach and learn new skills, I attempt to take what I have studied about what makes a game compelling and apply them in a learning context.",
+          "How can we make learning experiences more compelling? In exploration of alternative approaches to teach and learn new skills, I attempt to take what I have studied about what makes a game compelling and apply them in a learning context.",
         link: null,
-        isExternalLink: true
+        isExternalLink: true,
+        tag: 'learning game',
       },
     ],
   },

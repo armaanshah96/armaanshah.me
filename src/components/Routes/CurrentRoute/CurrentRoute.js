@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import siteData from "../../data/siteData";
-import { currentPage } from "../../utils/routeUtil";
-import ContentBlocks from '../ContentBlocks/ContentBlocks';
+import siteData from "../../../data/siteData";
+import { currentPage } from "../../../utils/routeUtil";
+import ContentBlocks from '../../ContentBlocks/ContentBlocks';
 
 const CurrentRoute = (props) => (
     <Route
