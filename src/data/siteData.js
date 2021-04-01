@@ -19,7 +19,7 @@ const siteData = {
         isExternalLink: false
       },
       {
-        title: "writing",
+        title: "written / writing",
         link: "writing",
         isExternalLink: false
       },
@@ -146,7 +146,7 @@ const siteData = {
     ],
   },
   writing: {
-    title: "writing",
+    title: "written / writing",
     subtitle: "half to full baked ideas",
     content: [
       {

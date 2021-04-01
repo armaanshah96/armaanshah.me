@@ -11,7 +11,7 @@ const DynamicRoutes = (props) => {
       <Route
         key={item.title}
         path={`${props.match.url}${item.link}`}
-        render={() => <ContentBlocks page={item.title} />}
+        render={() => <ContentBlocks page={item.link} />}
       />
     ) : null
   );

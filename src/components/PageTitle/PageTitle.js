@@ -1,8 +1,10 @@
 import React from "react";
 import { useRouteMatch, Link } from "react-router-dom";
+
 import classes from "./PageTitle.module.css";
-import { myName, home } from "../../utils/constants";
 import siteData from "../../data/siteData";
+import { myName, home } from "../../utils/constants";
+import { currentPage } from "../../utils/routeUtil";
 
 const PageTitle = (props) => {
   const match = useRouteMatch();
@@ -11,13 +13,12 @@ const PageTitle = (props) => {
       {myName}
     </Link>
   ) : (
-    props.navigation.path[props.navigation.path.length - 1]
+    siteData[currentPage(props.navigation.path)].title
   );
 
   const subtitle = props.isHomepage
     ? siteData[home].subtitle
-    : siteData[props.navigation.path[props.navigation.path.length - 1]]
-        .subtitle;
+    : siteData[currentPage(props.navigation.path)].subtitle;
 
   return (
     <div className={classes.pageTitle}>
