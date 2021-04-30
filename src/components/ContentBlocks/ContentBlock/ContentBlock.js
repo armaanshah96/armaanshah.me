@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
 import classes from "./ContentBlock.module.css";
+import Labels from "../../UI/Labels";
 import Label from "../../UI/Label";
 import References from "./References/References";
 
@@ -20,7 +21,8 @@ const ContentBlock = (props) => {
   return (
     <div className={classes.listItem}>
       <h5 className={classes.listItemTitle}>{maybeLink}</h5>
-      {props.tag && <Label tags={props.tag} />}
+      <Label isStatus={true} tag={props.status} />
+      <Labels tags={props.tag} />
       <p className={classes.paragraph}>{props.body}</p>
       <References links={props.references} />
     </div>

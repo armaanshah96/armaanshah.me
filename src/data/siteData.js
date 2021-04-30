@@ -52,10 +52,11 @@ const siteData = {
         title:
           "Pipes: A game to learn functional array methods (map, filter, reduce)",
         body:
-          "How can we make learning experiences more compelling? In exploration of alternative approaches to teach and learn new skills, I'm exploring ways to apply game design wisdom to a learning context. Designs ",
+          "How can we make learning experiences more compelling? In exploration of alternative approaches to teach and learn new skills, I'm exploring ways to apply game design wisdom to a learning context.",
         link: null,
         isExternalLink: true,
-        tag: ['in progress', 'learning game'],
+        tag: ['learning game'],
+        status: 'in progress',
         references: [
           {
             name: "What I've learned",
@@ -70,6 +71,22 @@ const siteData = {
             url: "https://www.figma.com/file/Nq3CR0mOSjCaDeAWxXtuxt/Learning-Game-Try-2-5?node-id=0%3A1"
           } 
         ],
+      },
+      {
+        title:
+          "A Non-Technical NLP Syllabus",
+        body:
+          "A friend recently asked if their idea 'is possible' with 'AI'. While it's easy to find content explaining algorithms and methodologies in AI, finding content that paints a broad picture of 'what is possible' for a non-technical reader is rare. This is a foray into what it would take to create a reasonable syllabus on how to 1) understand what is possible in NLP specifically, 2) how to stay up to date with the cutting edge technical aspects as a non-technical consumer",
+        link: null,
+        isExternalLink: true,
+        tag: ['syllabus'],
+        status: 'just starting',
+        references: [
+          {
+            name: "Working notes in public",
+            url: "https://www.notion.so/armaanshah/AI-Machine-Learning-Syllabus-3b955bee875545389614a5c19bc075aa"
+          }
+        ]
       },
     ],
   },
@@ -180,7 +197,7 @@ const siteData = {
           "",
         link: null,
         isExternalLink: false,
-        tag: ['todo']
+        status: 'todo'
       },
       {
         title:
@@ -189,7 +206,7 @@ const siteData = {
           "",
         link: null,
         isExternalLink: false,
-        tag: ['todo']
+        status: 'todo'
       },
       {
         title:
@@ -198,7 +215,7 @@ const siteData = {
           "",
         link: null,
         isExternalLink: false,
-        tag: ['todo']
+        status: 'todo'
       },
     ],
   },
