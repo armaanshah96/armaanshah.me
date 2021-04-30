@@ -4,6 +4,11 @@ const siteData = {
     subtitle: null,
     content: [
       {
+        title: "projects",
+        link: "projects",
+        isExternalLink: false
+      },
+      {
         title: "bookshelf",
         link: "bookshelf",
         isExternalLink: false
@@ -11,11 +16,6 @@ const siteData = {
       {
         title: "articles",
         link: "articles",
-        isExternalLink: false
-      },
-      {
-        title: "projects",
-        link: "projects",
         isExternalLink: false
       },
       {
@@ -34,18 +34,42 @@ const siteData = {
           "Pyrus: Designing A Collaborative Programming Game to Support Problem-Solving Behaviors",
         body:
           "Research exploring how to motivate novice programmers to practice problem solving skills while working on programming challenges. Encouraging behaviors like planning in advance through game mechanics.",
-        link: "http://eleanorourke.com/papers/pyrus_collaborative_programming_chi.pdf",
+        link: null,
         isExternalLink: true,
-        tag: 'research',
+        tag: ['research', 'learning game'],
+        references: [
+          {
+            name: "Paper",
+            url: "http://eleanorourke.com/papers/pyrus_collaborative_programming_chi.pdf"
+          },
+          {
+            name: "Github",
+            url: "https://github.com/NUDelta/pyrus"
+          }
+        ]
       },
       {
         title:
           "Pipes: A game to learn functional array methods (map, filter, reduce)",
         body:
-          "How can we make learning experiences more compelling? In exploration of alternative approaches to teach and learn new skills, I attempt to take what I have studied about what makes a game compelling and apply them in a learning context.",
+          "How can we make learning experiences more compelling? In exploration of alternative approaches to teach and learn new skills, I'm exploring ways to apply game design wisdom to a learning context. Designs ",
         link: null,
         isExternalLink: true,
-        tag: 'learning game',
+        tag: ['in progress', 'learning game'],
+        references: [
+          {
+            name: "What I've learned",
+            url: "https://www.notion.so/Artifacts-c6a59e8d1feb4bd5af88e87edaf052c7"
+          },
+          {
+            name: "Working notes in public",
+            url: "https://www.notion.so/Game-Learning-Design-Log-d98c51c749ef496dbcb13bb87dc58716"
+          },
+          {
+            name: "Figma designs in progress",
+            url: "https://www.figma.com/file/Nq3CR0mOSjCaDeAWxXtuxt/Learning-Game-Try-2-5?node-id=0%3A1"
+          } 
+        ],
       },
     ],
   },
@@ -56,25 +80,19 @@ const siteData = {
       {
         title: "A Gentleman In Moscow by Amor Towles",
         body:
-          "Incredible story of gratitude, ideology, and appreciation. Amor Towles paints a picture of intangible human interaction that I didn't think there were words to describe. Really fun to read.",
+          "Incredible story of gratitude, ideology, and appreciation of the mundane.",
         link: null,
       },
       {
         title: "How Will You Measure Your Life by Clayton Christensen",
         body:
-          "Framework for thinking about family and work. Ways of being intentional with personal values and those of family. The importance of how I spend my time and how to move towards joy in work.",
+          "The importance of how I spend my time and how to move towards joy in work.",
         link: null,
       },
       {
         title: "Educated by Tara Westover",
         body:
-          "A memoir that reads like fiction and deals with the clash between family culture and societal culture. A series of facts can have multiple interpretations, multiple narratives. The same facts can tell different histories.",
-        link: null,
-      },
-      {
-        title: "The Shock Doctrine by Naomi Klein",
-        body:
-          "Sheds light on how the ideology of Milton Freedom has been forced upon country after country by the United States for monetary gain and maintenance of a U.S. oriented power structure. This book shows how dangerous the incentives of capitalism can be when unregulated.",
+          "A memoir that reads like fiction. Deals with the clash of family and societal culture.",
         link: null,
       },
       {
@@ -89,7 +107,7 @@ const siteData = {
       },
       {
         title: "In Search of Schrodingers Cat by John Gribbin",
-        body: "Mind-bending step into quantum mechanics and its implications.",
+        body: "Mind-bending intro into quantum mechanics and its implications.",
         link: null,
       },
       {
@@ -98,8 +116,14 @@ const siteData = {
         link: null,
       },
       {
+        title: "The Shock Doctrine by Naomi Klein",
+        body:
+          "Sheds light on how the ideology of Milton Freedom has been forced upon country after country by the US for monetary gain and maintenance of a U.S. centric power structure.",
+        link: null,
+      },
+      {
         title: "Stories of Your Life and Others by Ted Chiang",
-        body: "Short story explorations of what worlds could look like when the rules of reality are tweaked. Made me realize some rules of reality / the world I have just accepted as true.",
+        body: "Short story explorations of what worlds could look like when the rules of reality are tweaked. Made me recognize some rules of society I have just accepted as true.",
         link: null,
       },
     ],
@@ -155,15 +179,17 @@ const siteData = {
         body:
           "",
         link: null,
-        isExternalLink: false
+        isExternalLink: false,
+        tag: ['todo']
       },
       {
         title:
-          "Coding is a communication medium",
+          "Coding as a communication medium",
         body:
           "",
         link: null,
-        isExternalLink: false
+        isExternalLink: false,
+        tag: ['todo']
       },
       {
         title:
@@ -171,7 +197,8 @@ const siteData = {
         body:
           "",
         link: null,
-        isExternalLink: false
+        isExternalLink: false,
+        tag: ['todo']
       },
     ],
   },
