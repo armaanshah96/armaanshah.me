@@ -74,6 +74,25 @@ const siteData = {
       },
       {
         title:
+          "Noted: Save meaningful readings and the insights you draw from them quickly",
+        body:
+          "Building off an old project, I used this chrome extension as a playground to practice pure javascript concepts and understand why frameworks and libraries like React are so useful",
+        link: null,
+        isExternalLink: true,
+        tag: [''],
+        references: [
+          {
+            name: "Chrome Web Store",
+            url: "https://chrome.google.com/webstore/detail/noted/imlpboogehgimmfiilnkcgbimkibkmip"
+          },
+          {
+            name: "Github",
+            url: "https://github.com/armaanshah96/noted"
+          }
+        ],
+      },
+      {
+        title:
           "A Non-Technical NLP Syllabus",
         body:
           "A friend recently asked if their idea 'is possible' with 'AI'. While it's easy to find content explaining algorithms and methodologies in AI, finding content that paints a broad picture of 'what is possible' for a non-technical reader is rare. This is a foray into what it would take to create a reasonable syllabus on how to 1) understand what is possible in NLP specifically, 2) how to stay up to date with the cutting edge technical aspects as a non-technical consumer",
@@ -92,7 +111,7 @@ const siteData = {
   },
   bookshelf: {
     title: "bookshelf",
-    subtitle: "for books that were just incredible",
+    subtitle: "for books that were just incredible and worth a reread",
     content: [
       {
         title: "A Gentleman In Moscow by Amor Towles",
@@ -103,7 +122,7 @@ const siteData = {
       {
         title: "How Will You Measure Your Life by Clayton Christensen",
         body:
-          "The importance of how I spend my time and how to move towards joy in work.",
+          "Ideas behind how spending my time defines who I am and how I can prioritize what's actually important",
         link: null,
       },
       {
@@ -135,7 +154,7 @@ const siteData = {
       {
         title: "The Shock Doctrine by Naomi Klein",
         body:
-          "Sheds light on how the ideology of Milton Freedom has been forced upon country after country by the US for monetary gain and maintenance of a U.S. centric power structure.",
+          "Sheds light on how the ideology of Milton Friedman has been forced upon country after country by the US for monetary gain and maintenance of a U.S. centric power structure.",
         link: null,
       },
       {
@@ -225,6 +244,7 @@ const siteData = {
     content: [
       {
         title: "armaanshah96 at gmail.com",
+        body: "looking to build learning experiences and open to opportunities to do so",
         link: null,
       }
     ],

@@ -1,2 +1,2 @@
 # Personal Website
-Not currently publicly hosted
+hosted at armaanshah.me
