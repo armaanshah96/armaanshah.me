@@ -249,6 +249,10 @@ const siteData = {
       }
     ],
   },
+  resources: {
+    title: "resources",
+    subtitle: "tools for other projects, not really meant for viewing",
+  },
 };
 
 export default siteData;

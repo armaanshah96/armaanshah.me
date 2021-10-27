@@ -1,0 +1,9 @@
+.resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource {
+  width: 256px;
+  margin-bottom: 1em;
+}

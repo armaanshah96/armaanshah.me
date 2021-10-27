@@ -5,6 +5,7 @@ import { constructPathArray, isHomepage } from "./utils/routeUtil";
 import PageTitle from "./components/PageTitle/PageTitle";
 import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
 import ContentBlocks from "./components/ContentBlocks/ContentBlocks";
+import ResourceContent from "./components/ResourceContent/ResourceContent";
 import CurrentRoute from "./components/Routes/CurrentRoute/CurrentRoute";
 import DynamicRoutes from "./components/Routes/Dynamic Routes/DynamicRoutes";
 
@@ -35,6 +36,11 @@ const App = (props) => {
           exact
           path="/armaan"
           render={() => <ContentBlocks page="armaan" />}
+        />
+        <Route
+          exact
+          path="/resources"
+          render={() => <ResourceContent/>}
         />
         <CurrentRoute pathArray={navigationState.path} />
         <DynamicRoutes pathArray={navigationState.path} />
