@@ -25,6 +25,13 @@ const ResourceContent = () => {
           process.env.PUBLIC_URL + "/images/tree-of-life-crazy-scarecrow.png"
         }
       />
+      <img
+        className={classes.resource}
+        alt="tree of life"
+        src={
+          process.env.PUBLIC_URL + "/images/tree-of-life.png"
+        }
+      />
     </div>
   );
 };
