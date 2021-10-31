@@ -74,6 +74,21 @@ const siteData = {
       },
       {
         title:
+          "Tree of Life: Simple NFT game on ethereum blockchain",
+        body:
+          "Exploring how to create a web3 game via a tutorial on buildspace. Dabbling in smart contracts and NFTs on the ethereum chain.",
+        link: null,
+        isExternalLink: true,
+        tag: [''],
+        references: [
+          {
+            name: "Tree Of Life",
+            url: "https://elated-swanson-0d590e.netlify.app/"
+          },
+        ],
+      },
+      {
+        title:
           "Noted: Save meaningful readings and the insights you draw from them quickly",
         body:
           "Building off an old project, I used this chrome extension as a playground to practice pure javascript concepts and understand why frameworks and libraries like React are so useful",
